@@ -1,11 +1,18 @@
 const express = require('express');
-// const expressLayouts = require('express-ejs-layouts');
+// const passport = require('passport');
+const express_session = require('express-session');
+const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
 const path = require('path');
 const db = require('./config/keys').mongoURI;
 const app = express();
+// app.use(passport.initialize());
+// app.use(passport.session());
+app.use(expressLayouts);
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express_session);
+
 
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/public/index.html");
@@ -36,6 +43,6 @@ mongoose
     .then(() => console.log('MongoDB Connected 🎉 '))
     .catch(err => console.log(err));
   
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8000;
   
 app.listen(PORT, console.log(`Server running on  ${PORT}`));

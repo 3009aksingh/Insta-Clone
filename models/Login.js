@@ -1,5 +1,5 @@
 //contact us form backend
-const validator = require("validator");
+// const validator = require("validator");
 const mongoose = require('mongoose');
 
 const loginSchema = new mongoose.Schema({
@@ -18,11 +18,7 @@ const loginSchema = new mongoose.Schema({
     mail: {
         type: String,
         required: true,
-        validate(value) {
-            if (!validator.isEmail(value)) {
-                throw new Error("Invalid Email ID")
-            }
-        },
+        min:1
 
     },
 

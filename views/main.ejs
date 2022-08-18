@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="preconnect" href="https://discuss-akss.herokuapp.com/" />
+<link rel="dns-prefetch" href="https://discuss-akss.herokuapp.com/" />
+<link rel="preconnect" href="https://payment-portal-akss.herokuapp.com/" />
+<link rel="dns-prefetch" href="https://payment-portal-akss.herokuapp.com/" />
+<link rel="preconnect" href="https://chat-forum-akss.herokuapp.com/auth/google" />
+<link rel="dns-prefetch" href="https://chat-forum-akss.herokuapp.com/auth/google" />
+<link rel="preconnect" href="https://dashboard.heroku.com/apps/video-call-akss" />
+<link rel="dns-prefetch" href="https://dashboard.heroku.com/apps/video-call-akss" />
+<link rel="preconnect" href="https://event-calendar-akss.herokuapp.com/" />
+<link rel="dns-prefetch" href="https://event-calendar-akss.herokuapp.com/" />
+<link rel="preconnect" href="https://voting-portal-akss.herokuapp.com/" />
+<link rel="dns-prefetch" href="https://voting-portal-akss.herokuapp.com/" />
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  const options = {
+    bottom: '40px', // default: '32px'
+    right: '32px', // default: '32px'
+    left: 'unset', // default: 'unset'
+    time: '0.3s', // default: '0.3s'
+    mixColor: '#fff', // default: '#fff'
+    backgroundColor: '#fff', // default: '#fff'
+    buttonColorDark: '#100f2c', // default: '#100f2c'
+    buttonColorLight: '#fff', // default: '#fff'
+    saveInCookies: true, // default: true,
+    label: '🌓', // default: ''
+    autoMatchOsTheme: true, // default: true
+  };
+
+  const darkmode = new Darkmode(options);
+  darkmode.showWidget();
+</script>
+
+<style>
+  body {
+    font-family: 'Lato', sans-serif;
+  }
+
+  .mySlides {
+    display: none;
+  }
+</style>
+<script>
+  var myWindow;
+
+  function openWin() {
+    myWindow = window.open(
+      'https://console.dialogflow.com/api-client/demo/embedded/cccb7100-40ea-42a1-91da-6dfe983f6924',
+      'myWindow',
+      'width=350,height=430,left=950px,top=300px'
+    );
+  }
+</script>
+
+<body>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="/main">Home</a>
+        <a href="/users/about">About</a>
+        <a href="/users/contact">Contact</a>
+        <a href="/users/gallery">Gallery</a>
+        <a href="/users/registration">Registration</a>
+        <a href="/users/team">Team</a>
+        <a href="https://discussion-forum-akss.herokuapp.com/" target="_blank">Discussion Forum</a>
+        <a href="/users/events">Events & Timeline</a>
+        <a href="/users/testimonial">Testimonial</a>
+        <a href="/users/sponser">Sponser</a>
+        <a href="https://video-call-akss.herokuapp.com/">Video Chat (1:1)</a>
+        <a href="https://voting-portal-akss.herokuapp.com/">Voting Portal</a>
+        <a href="/users/newsletter">Newsletter</a>
+        <a href="https://chat-forum-akss.herokuapp.com/auth/google/">Text Chat</a>
+        <!-- <a href=""><button onclick="openWin()">Chatbot</button></a> -->
+      </div>
+
+      <div>
+        <button class="openbtn" onclick="openNav()">☰</button>
+        <a style="font-size: 25px; color: white; margin-left: 10px" href="/">Euforia</a>
+        <a href=""><button class="cht-btn sticky-top btn btn-light" onclick="openWin()">
+            Chat Bot
+            <i class="fas fa-robot fa-lg" style="margin-left: 10px"></i></button></a>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="
+              background-image: url('https://i.imgur.com/hRhcNQ5.jpg');
+            ">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4">DJ Concert</h2>
+            <p class="lead">Moments which you haven't experienced till now</p>
+          </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="
+              background-image: url('https://i.imgur.com/r12DSmH.jpg');
+            ">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4">Dancing Competition</h2>
+            <p class="lead">Win the competition by showing best moves you have.</p>
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="
+              background-image: url('https://i.imgur.com/mFxDC4z.jpg');
+            ">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4">Singing Competition</h2>
+            <p class="lead">Show your singing skills and win the competition.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <script>
+    function openNav() {
+      document.getElementById('mySidebar').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeNav() {
+      document.getElementById('mySidebar').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+  <style>
+    .cht-btn {
+      color: #111;
+      width: 25%;
+      float: right;
+      margin-top: 20px;
+      margin-right: 10px;
+      margin-bottom: 2px;
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+    }
+
+    .carousel-item {
+      height: 100vh;
+      min-height: 350px;
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #111;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      margin: 20px;
+    }
+
+    .openbtn:hover {
+      background-color: #444;
+    }
+
+    #main {
+      transition: margin-left 0.5s;
+      padding: 16px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidebar {
+        padding-top: 15px;
+      }
+
+      .sidebar a {
+        font-size: 18px;
+      }
+    }
+  </style>
+  <!-- //////////////////////////////////////////IMAGE SLIDER/////////////////////////////////////////// -->
+
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-white" href="https://phcet.ac.in/#">PHCET</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+  <script>
+    ///////////////////////////////////////////////////////////////////////////////////////////
+    ////////NAVBAR BUTTON
+    function openNav() {
+      document.getElementById('mySidebar').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeNav() {
+      document.getElementById('mySidebar').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+    ////////////////////////////////////////////////////////////////////////////////////
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName('mySlides');
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = 'none';
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1;
+      }
+      x[myIndex - 1].style.display = 'block';
+      setTimeout(carousel, 4000);
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById('navDemo');
+      if (x.className.indexOf('w3-show') == -1) {
+        x.className += ' w3-show';
+      } else {
+        x.className = x.className.replace(' w3-show', '');
+      }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    };
+  </script>
+  <style>
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #111;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      margin: 20px;
+    }
+
+    .openbtn:hover {
+      background-color: #444;
+    }
+
+    #main {
+      transition: margin-left 0.5s;
+      padding: 16px;
+    }
+
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+      .sidebar {
+        padding-top: 15px;
+      }
+
+      .sidebar a {
+        font-size: 18px;
+      }
+    }
+  </style>
+</body>
+
+</html>
