@@ -6,8 +6,9 @@ var MongoClient = require('mongodb').MongoClient;
 const Login = require('../models/Login')
 const nodemailer = require("nodemailer");
 const request = require('request');
-var url = "mongodb+srv://Ankit3009:Ankit.code@8032@cluster0.nc0m6ut.mongodb.net/Instagram?retryWrites=true&w=majority";
+var url = "mongodb+srv://Ankit3009:Ankita@cluster0.nc0m6ut.mongodb.net/Instagram?retryWrites=true&w=majority";
 
+console.log("In users.js 1");
 // router.get('/about', (req, res) => res.render('about'));
 // router.get('/sponser', (req, res) => res.render('sponser'));
 // router.get('/testimonial', (req, res) => res.render('testimonial'));
@@ -16,9 +17,11 @@ var url = "mongodb+srv://Ankit3009:Ankit.code@8032@cluster0.nc0m6ut.mongodb.net/
 
 // router.get('/contact', (req, res) => res.render('contact'));
 
-// router.get('/registration', (req, res) => res.render('registration'));
+router.get('/login', (req, res) => res.render('login'));
 
 // router.get('/events', (req, res) => res.render('events'));
+
+console.log("In users.js 2");
 
 // router.get('/team', (req, res) => res.render('team'));
 
@@ -241,7 +244,6 @@ var url = "mongodb+srv://Ankit3009:Ankit.code@8032@cluster0.nc0m6ut.mongodb.net/
 
 // })
 
-
 router.post("/login", async (req, res) => {
     console.log("inside login backend");
 
@@ -375,7 +377,7 @@ router.post("/login", async (req, res) => {
             //     }
             // });
             // // End Mail code 2
-
+            console.log("In users.js 3");
             dbObj.collection("logins").insertOne(dataObj, function (err, data) {
 
                 if (err) {
@@ -393,5 +395,6 @@ router.post("/login", async (req, res) => {
     });
 });
 
+console.log("In users.js 4");
 
 module.exports = router;

@@ -1,5 +1,8 @@
 //contact us form backend
 // const validator = require("validator");
+
+console.log("In Login.js 1");
+
 const mongoose = require('mongoose');
 
 const loginSchema = new mongoose.Schema({
